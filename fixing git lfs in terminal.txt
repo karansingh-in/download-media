@@ -1,0 +1,303 @@
+this file is not a part of the download-media project and is just here for my future reference
+
+PS D:\all coding related\download-media> & C:/Users/Karan/AppData/Local/Programs/Python/Python313/python.exe "d:/all coding related/download-media/main.py"
+[Instagram] Extracting URL: https://www.instagram.com/reel/DJinNExRo8b/ 
+[Instagram] DJinNExRo8b: Setting up session 
+[Instagram] DJinNExRo8b: Downloading JSON metadata 
+[info] DJinNExRo8b: Downloading 1 format(s): dash-1041151827535234ad 
+[download] Destination: Video by stala6351rex [DJinNExRo8b].m4a 
+[download] 100% of  247.16KiB in 00:00:00 at 3.23MiB/s
+[FixupM4a] Correcting container of "Video by stala6351rex [DJinNExRo8b].m4a" 
+[ExtractAudio] Destination: Video by stala6351rex [DJinNExRo8b].mp3 
+Deleting original file Video by stala6351rex [DJinNExRo8b].m4a (pass -k to keep) 
+[Instagram] Extracting URL: https://www.instagram.com/reel/DJinNExRo8b/ 
+[Instagram] DJinNExRo8b: Setting up session 
+[Instagram] DJinNExRo8b: Downloading JSON metadata 
+[info] DJinNExRo8b: Downloading 1 format(s): 1 
+[download] Destination: Video by stala6351rex [DJinNExRo8b].mp4 
+[download] 100% of    2.82MiB in 00:00:00 at 3.27MiB/s
+PS D:\all coding related\download-media> & C:/Users/Karan/AppData/Local/Programs/PPS D:\all coding related\download-media> & C:/Users/Karan/AppData/Local/Programs/Python/Python313/python.exe "d:/all coding related/download-media/main.py"
+[Instagram] Extracting URL: https://www.instagram.com/reel/DHqvGX_z-4i/?igsh=MWw0MTAwZzVkZXJ1bg==
+[Instagram] DHqvGX_z-4i: Setting up session
+[Instagram] DHqvGX_z-4i: Downloading JSON metadata
+[info] DHqvGX_z-4i: Downloading 1 format(s): dash-964732179114382ad
+[download] Destination: Video by rachanakoorthy [DHqvGX_z-4i].m4a
+[download] 100% of  114.66KiB in 00:00:00 at 1.28MiB/s
+[FixupM4a] Correcting container of "Video by rachanakoorthy [DHqvGX_z-4i].m4a"    
+[ExtractAudio] Destination: Video by rachanakoorthy [DHqvGX_z-4i].mp3
+Deleting original file Video by rachanakoorthy [DHqvGX_z-4i].m4a (pass -k to keep)
+[Instagram] Extracting URL: https://www.instagram.com/reel/DHqvGX_z-4i/?igsh=MWw0MTAwZzVkZXJ1bg==
+[Instagram] DHqvGX_z-4i: Setting up session
+[Instagram] DHqvGX_z-4i: Downloading JSON metadata
+[info] DHqvGX_z-4i: Downloading 1 format(s): 8
+[download] Destination: Video by rachanakoorthy [DHqvGX_z-4i].mp4
+[download] 100% of  828.51KiB in 00:00:00 at 7.27MiB/s
+PS D:\all coding related\download-media> & C:/Users/Karan/AppData/Local/Programs/Python/Python313/python.exe "d:/all coding related/download-media/main.py"
+[generic] Extracting URL: https://pin.it/5iiPy8Bmf 
+[generic] 5iiPy8Bmf: Downloading webpage 
+[redirect] Following redirect to https://www.pinterest.com/pin/20618110788711861/sent/?invite_code=0f33255871ab4c4d9b9abbd5e712e5a8&sender=929500948001384447&sfo=1 
+[Pinterest] Extracting URL: https://www.pinterest.com/pin/20618110788711861/sent/?invite_code=0f33255871ab4c4d9b9abbd5e712e5a...00948001384447&sfo=1
+[Pinterest] 20618110788711861: Download Pin JSON metadata 
+te_Audio
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 4
+[download] Destination: •°~Gilmore girls~°• [20618110788711861].mp4
+[download] 100% of  151.42KiB in 00:00:00 at 334.86KiB/s
+[ExtractAudio] Destination: •°~Gilmore girls~°• [20618110788711861].mp3
+Deleting original file •°~Gilmore girls~°• [20618110788711861].mp4 (pass -k to keep)
+[generic] Extracting URL: https://pin.it/5iiPy8Bmf
+[generic] 5iiPy8Bmf: Downloading webpage
+[redirect] Following redirect to https://www.pinterest.com/pin/20618110788711861/sent/?invite_code=0f33255871ab4c4d9b9abbd5e712e5a8&sender=929500948001384447&sfo=1
+[Pinterest] Extracting URL: https://www.pinterest.com/pin/20618110788711861/sent/?invite_code=0f33255871ab4c4d9b9abbd5e712e5a...00948001384447&sfo=1
+[Pinterest] 20618110788711861: Download Pin JSON metadata
+[Pinterest] 20618110788711861: Downloading m3u8 information
+[info] 20618110788711861: Downloading 1 format(s): V_720P
+[download] Destination: •°~Gilmore girls~°• [20618110788711861].mp4
+[download] 100% of  787.69KiB in 00:00:01 at 505.00KiB/s
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+        deleted:    testing.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+        testing.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\all coding related\download-media> git add main.py
+PS D:\all coding related\download-media> git add testing.py
+PS D:\all coding related\download-media> git add index.html
+PS D:\all coding related\download-media> git add testing.html
+PS D:\all coding related\download-media> git add style.css
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        modified:   main.py
+        new file:   style.css
+        new file:   testing.html
+        deleted:    testing.py
+
+PS D:\all coding related\download-media> git commit -m "added frontend"
+[main 772945f] added frontend
+ 5 files changed, 1177 insertions(+), 28 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+ create mode 100644 testing.html
+ delete mode 100644 testing.py
+PS D:\all coding related\download-media> git push origin main
+Uploading LFS objects: 100% (3/3), 464 MB | 0 B/s, done.
+Enumerating objects: 67, done.
+Counting objects: 100% (67/67), done.
+Delta compression using up to 18 threads
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (65/65), 77.39 MiB | 3.16 MiB/s, done.
+Total 65 (delta 22), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (22/22), done.
+remote: error: Trace: fd1cc1e04a9f4df84650a803bb7006092b04f01a2aca75bdd5270b94ffb10afa
+remote: error: See https://gh.io/lfs for more information.
+remote: error: File ffmpeg_file/bin/ffprobe.exe is 147.05 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: File ffmpeg_file/bin/ffplay.exe is 148.68 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: File ffmpeg_file/bin/ffmpeg.exe is 147.24 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.       
+To https://github.com/karansingh-in/download-media.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/karansingh-in/download-media.git'
+PS D:\all coding related\download-media> git reset --hard <commit-hash>
+At line:1 char:18
++ git reset --hard <commit-hash>
++                  ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media>
+PS D:\all coding related\download-media>
+PS D:\all coding related\download-media> git log --oneline
+772945f (HEAD -> main) added frontend
+68f41a5 added ffmpeg via git lfs
+e41fe66 added ffmpeg
+96b5ae9 (origin/main, origin/HEAD) initial commit
+8701333 Initial commit
+PS D:\all coding related\download-media> git reset --hard HEAD^  # Resets to the previous commit
+HEAD is now at 68f41a5 added ffmpeg via git lfs
+PS D:\all coding related\download-media> git reset --hard HEAD^  # Resets to the previous commit
+Updating files: 100% (4/4), done.
+HEAD is now at e41fe66 added ffmpeg
+PS D:\all coding related\download-media> git reset --hard HEAD^  # Resets to the previous commit
+HEAD is now at 96b5ae9 initial commit
+PS D:\all coding related\download-media> git add -A
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+        deleted:    main1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+        test.py
+        testing.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\all coding related\download-media> git add -A
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        modified:   main.py
+        new file:   style.css
+        renamed:    main1.py -> test.py
+        new file:   testing.html
+
+PS D:\all coding related\download-media> git commit -m "added front end"
+[main 433311f] added front end
+ 5 files changed, 1359 insertions(+), 18 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+ rename main1.py => test.py (100%)
+ create mode 100644 testing.html
+PS D:\all coding related\download-media> git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 18 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 5.96 KiB | 1.99 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/karansingh-in/download-media.git
+   96b5ae9..433311f  main -> main
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media>
+PS D:\all coding related\download-media>
+PS D:\all coding related\download-media>
+PS D:\all coding related\download-media> git lfs install
+Updated Git hooks.
+Git LFS initialized.
+PS D:\all coding related\download-media> git lfs ls-files
+PS D:\all coding related\download-media>                                                            
+PS D:\all coding related\download-media> git lfs track "ffmpeg_file/**" 
+Tracking "ffmpeg_file/**"
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media> git add .gitattributes
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media> git commit -m "Added Git LFS tracking for ffmpeg_files folder"
+[main 80d4b7c] Added Git LFS tracking for ffmpeg_files folder
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitattributes
+PS D:\all coding related\download-media> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 18 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/karansingh-in/download-media.git
+   433311f..80d4b7c  main -> main
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media> git lfs push origin main --all
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media> git lfs ls-files
+PS D:\all coding related\download-media> git lfs push origin main
+PS D:\all coding related\download-media> git lfs ls-files
+PS D:\all coding related\download-media> 
+PS D:\all coding related\download-media> git push origin main --force
+Everything up-to-date
+PS D:\all coding related\download-media> git lfs push origin main --all
+PS D:\all coding related\download-media> ^C
+PS D:\all coding related\download-media> git push origin main --force
+Everything up-to-date
+PS D:\all coding related\download-media> git lfs ls-files
+PS D:\all coding related\download-media>  git add -A
+PS D:\all coding related\download-media> git commit -m "added audio download button"
+[main 2f75428] added audio download button
+ 46 files changed, 137 insertions(+), 38 deletions(-)
+ create mode 100644 ffmpeg_file/LICENSE
+ create mode 100644 ffmpeg_file/README.txt
+ create mode 100644 ffmpeg_file/bin/ffmpeg.exe
+ create mode 100644 ffmpeg_file/bin/ffplay.exe
+ create mode 100644 ffmpeg_file/bin/ffprobe.exe
+ create mode 100644 ffmpeg_file/doc/bootstrap.min.css
+ create mode 100644 ffmpeg_file/doc/community.html
+ create mode 100644 ffmpeg_file/doc/default.css
+ create mode 100644 ffmpeg_file/doc/developer.html
+ create mode 100644 ffmpeg_file/doc/faq.html
+ create mode 100644 ffmpeg_file/doc/fate.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-all.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-bitstream-filters.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-codecs.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-devices.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-filters.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-formats.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-protocols.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-resampler.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-scaler.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg-utils.html
+ create mode 100644 ffmpeg_file/doc/ffmpeg.html
+ create mode 100644 ffmpeg_file/doc/ffplay-all.html
+ create mode 100644 ffmpeg_file/doc/ffplay.html
+ create mode 100644 ffmpeg_file/doc/ffprobe-all.html
+ create mode 100644 ffmpeg_file/doc/ffprobe.html
+ create mode 100644 ffmpeg_file/doc/general.html
+ create mode 100644 ffmpeg_file/doc/git-howto.html
+ create mode 100644 ffmpeg_file/doc/libavcodec.html
+ create mode 100644 ffmpeg_file/doc/libavdevice.html
+ create mode 100644 ffmpeg_file/doc/libavfilter.html
+ create mode 100644 ffmpeg_file/doc/libavformat.html
+ create mode 100644 ffmpeg_file/doc/libavutil.html
+ create mode 100644 ffmpeg_file/doc/libswresample.html
+ create mode 100644 ffmpeg_file/doc/libswscale.html
+ create mode 100644 ffmpeg_file/doc/mailing-list-faq.html
+ create mode 100644 ffmpeg_file/doc/nut.html
+ create mode 100644 ffmpeg_file/doc/platform.html
+ create mode 100644 ffmpeg_file/doc/style.min.css
+ create mode 100644 ffmpeg_file/presets/libvpx-1080p.ffpreset
+ create mode 100644 ffmpeg_file/presets/libvpx-1080p50_60.ffpreset
+ create mode 100644 ffmpeg_file/presets/libvpx-360p.ffpreset
+ create mode 100644 ffmpeg_file/presets/libvpx-720p.ffpreset
+ create mode 100644 ffmpeg_file/presets/libvpx-720p50_60.ffpreset
+PS D:\all coding related\download-media> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\all coding related\download-media> git push origin main
+Uploading LFS objects: 100% (44/44), 476 MB | 1.8 MB/s, done.
+Enumerating objects: 55, done.
+Counting objects: 100% (55/55), done.
+Delta compression using up to 18 threads
+Compressing objects: 100% (52/52), done.
+Writing objects: 100% (52/52), 7.09 KiB | 302.00 KiB/s, done.
+Total 52 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/karansingh-in/download-media.git
+   80d4b7c..2f75428  main -> main
+PS D:\all coding related\download-media> 
