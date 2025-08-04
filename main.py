@@ -27,6 +27,6 @@ def audio_from_yt(url):
         me.download([url])
 
 
-mus = audio_from_yt('https://pin.it/5iiPy8Bmf')
+mus = audio_from_yt('https://www.reddit.com/r/interestingasfuck/comments/1dd7fbq/ai_noodle_videos_one_year_later_were_cooked/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button')
 
-vid_best = yt_in_best('https://pin.it/5iiPy8Bmf')
+vid_best = yt_in_best('https://www.reddit.com/r/interestingasfuck/comments/1dd7fbq/ai_noodle_videos_one_year_later_were_cooked/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button')

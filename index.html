@@ -250,7 +250,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
 
         .social-link {
@@ -358,6 +358,7 @@
 
         .loading-dot:nth-child(1) { animation-delay: -0.32s; }
         .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+ 
 
         @keyframes loading {
             0%, 80%, 100% {
@@ -367,37 +368,113 @@
                 transform: scale(1);
             }
         }
+
+        .fb-icon {
+    width: 77px;
+    height: 77px;
+    object-fit: contain;
+}
+
+        .ig-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+        .yt-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+        .rdt-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+        .th-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+        .pnt-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.x-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.github-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.gmail-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.linkedin-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+
+.insta-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Video Downloader</h1>
-        <p>Download high-quality videos and media from your favorite social platforms</p>
+        <h2>Video Downloader</h2>
+        <p>Download high-quality videos and audio from your favorite social platforms (img ke liye screenshot lelo vai)</p>
     </div>
 
     <p class="supported-text">Supports downloads from:</p>
     
     <div class="platform-icons">
         <div class="platform-item" data-platform="youtube">
-            <div class="platform-icon youtube">YT</div>
+           <img src="/icons/yt.svg" alt="youtube Icon" class="yt-icon">
             <div class="platform-name">YouTube</div>
         </div>
         <div class="platform-item" data-platform="instagram">
-            <div class="platform-icon instagram">IG</div>
-            <div class="platform-name">Instagram</div>
+            <img src="/icons/insta.svg" alt="instagram Icon" class="ig-icon">
+              <div class="platform-name">Instagram</div>
         </div>
         <div class="platform-item" data-platform="threads">
-            <div class="platform-icon threads">@</div>
+            <img src="/icons/threads.svg" alt="threads Icon" class="th-icon">
             <div class="platform-name">Threads</div>
         </div>
         <div class="platform-item" data-platform="pinterest">
-            <div class="platform-icon pinterest">P</div>
+            <img src="/icons/pinterest.svg" alt="pinterest Icon" class="pnt-icon">
             <div class="platform-name">Pinterest</div>
         </div>
-        <div class="platform-item" data-platform="facebook">
-            <div class="platform-icon facebook">f</div>
-            <div class="platform-name">Facebook</div>
+       <div class="platform-item" data-platform="instagram">
+            <img src="/icons/facebook.svg" alt="facebook Icon" class="fb-icon">
+              <div class="platform-name">Facebook</div>
         </div>
+    </div>
+    
+
+</div>
     </div>
 
     <div class="download-container">
@@ -458,21 +535,35 @@
             Made with <span class="heart">❤️</span> by karansingh-in
         </div>
         <div class="social-links">
-            <a href="https://twitter.com/karansingh_in" target="_blank" class="social-link twitter">
-                <span class="social-icon">𝕏</span>
-                <span>Twitter</span>
+            <a href="https://x.com/karansingh_in" target="_blank" class="social-link twitter">
+                <span class="social-icon">
+                    <img src="/icons/x.svg" alt="X Icon" class="x-icon">
+                </span>
+                <!-- <span>X</span> -->
             </a>
             <a href="https://github.com/karansingh-in" target="_blank" class="social-link github">
-                <span class="social-icon">⚡</span>
-                <span>GitHub</span>
+                <span class="social-icon">
+                    <img src="/icons/github.svg" alt="github Icon" class="github-icon">
+                </span>
+                <!-- <span>GitHub</span> -->
             </a>
-            <a href="https://instagram.com/karansingh.in" target="_blank" class="social-link instagram-link">
-                <span class="social-icon">📷</span>
-                <span>Instagram</span>
+             <a href="https://www.linkedin.com/in/karan-singh-a35a52235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link linkedin">
+                <span class="social-icon">
+                    <img src="/icons/linkedin.svg" alt="X Icon" class="linkedin-icon">
+                </span>
+                <!-- <span>Linkedin</span> -->
             </a>
-            <a href="mailto:karansingh.in@gmail.com" class="social-link gmail">
-                <span class="social-icon">✉️</span>
-                <span>Gmail</span>
+            <a href="https://instagram.com/karannsinggh" target="_blank" class="social-link instagram">
+                <span class="social-icon">
+                    <img src="/icons/insta.svg" alt="instagram Icon" class="insta-icon">
+                </span>
+                <!-- <span>Instagram</span> -->
+            </a>
+            <a href="mailto:karannsinggh@gmail.com" class="social-link gmail">
+                <span class="social-icon">
+                    <img src="/icons/gmail.svg" alt="gmail Icon" class="gmail-icon">
+                </span>
+                <!-- <span>Gmail</span> -->
             </a>
         </div>
     </footer>
@@ -504,29 +595,31 @@
                 alert('Please enter a valid URL');
                 return;
             }
-            
-            // Validate URL format
             if (!isValidUrl(url)) {
                 alert('Please enter a valid URL');
                 return;
             }
-            
-            // Show loading state
             btnText.style.display = 'none';
             loading.classList.add('active');
             currentBtn.disabled = true;
-            
-            // Simulate download process
+
             try {
-                await simulateDownload(url);
-                const message = type === 'video' 
-                    ? 'Video download completed! Check your downloads folder.' 
-                    : 'Audio download completed! Check your downloads folder.';
-                alert(message);
+                const response = await fetch('/download', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url, type })
+                });
+                const result = await response.json();
+                if (result.status === 'success') {
+                    alert(type === 'video' 
+                        ? 'Video download completed! Check your downloads folder.' 
+                        : 'Audio download completed! Check your downloads folder.');
+                } else {
+                    alert('Download failed: ' + (result.message || 'Unknown error'));
+                }
             } catch (error) {
                 alert('Download failed. Please try again.');
             } finally {
-                // Reset button state
                 btnText.style.display = 'block';
                 loading.classList.remove('active');
                 currentBtn.disabled = false;
