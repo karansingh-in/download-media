@@ -453,6 +453,34 @@
         <h4>Download high-quality videos and audio from your favorite social platforms (img ke liye screenshot lelo vai)</h4>
     </div>
 
+      <div class="download-container">
+        <div class="input-container">
+            <input 
+                type="text" 
+                class="url-input" 
+                placeholder="Paste your video URL here (YouTube, Instagram, Threads, Pinterest, Facebook)"
+                id="urlInput"
+            >
+        </div>
+        <button class="download-btn" id="downloadBtn">
+            <span class="btn-text">⬇️ Download Video</span>
+            <div class="loading">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </button>
+        <button class="download-btn audio-btn" id="downloadAudioBtn">
+            <span class="btn-text">🎵 Download Audio Only</span>
+            <div class="loading">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </button>
+    </div>
+
+
     <p class="supported-text">Supports downloads from:</p>
     
     <div class="platform-icons">
@@ -480,39 +508,21 @@
             <img src="/icons/reddit.svg" alt="reddit Icon" class="rdt-icon">
               <div class="platform-name">Reddit</div>
         </div>
+        <div class="platform-item" data-platform="twitch">
+           <img src="/icons/twitch.svg" alt="twitch Icon" class="yt-icon">
+            <div class="platform-name">Twitch</div>
+        </div>
+        <div class="platform-item" data-platform="soundcloud">
+           <img src="/icons/soundcloud.svg" alt="soundcloud Icon" class="yt-icon">
+            <div class="platform-name">Soundcloud</div>
+        </div>
     </div>
     
 
 </div>
     </div>
 
-    <div class="download-container">
-        <div class="input-container">
-            <input 
-                type="text" 
-                class="url-input" 
-                placeholder="Paste your video URL here (YouTube, Instagram, Threads, Pinterest, Facebook)"
-                id="urlInput"
-            >
-        </div>
-        <button class="download-btn" id="downloadBtn">
-            <span class="btn-text">⬇️ Download Video</span>
-            <div class="loading">
-                <div class="loading-dot"></div>
-                <div class="loading-dot"></div>
-                <div class="loading-dot"></div>
-            </div>
-        </button>
-        <button class="download-btn audio-btn" id="downloadAudioBtn">
-            <span class="btn-text">🎵 Download Audio Only</span>
-            <div class="loading">
-                <div class="loading-dot"></div>
-                <div class="loading-dot"></div>
-                <div class="loading-dot"></div>
-            </div>
-        </button>
-    </div>
-
+  
     <div class="features">
         <div class="feature-card">
             <div class="feature-icon">🎥</div>
