@@ -1,10 +1,16 @@
 import os
 import yt_dlp
+import json
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
 
 # VIDEO DOWNLOADER 
 def yt_in_best(url, quality = "1080"):
     opts = {
-        'format': 'best',
+         'format': f'bestvideo[height<={quality}]',
+
+      #  'format': 'best',
     }
  
     with yt_dlp.YoutubeDL(opts) as me:
@@ -22,11 +28,27 @@ def audio_from_yt(url):
             'preferredquality': '192',     # bitrate of 192
         }],
     }
+
+    
     
     with yt_dlp.YoutubeDL(opts) as me:
         me.download([url])
 
 
-mus = audio_from_yt('https://youtube.com/shorts/aJftroCbquE?si=fU1NOpBR1DJPNBDZ')
+@app.route('/download', methods=['POST'])
+def download():
+    data = request.json
+    url = data.get('url')
+    dtype = data.get('type')  # 'video' or 'audio'
 
-vid_best = yt_in_best('https://youtube.com/shorts/aJftroCbquE?si=fU1NOpBR1DJPNBDZ')
+    if not url or dtype not in ('video', 'audio'):
+        return {"status": "error", "message": "Invalid input"}, 400
+
+    try:
+        if dtype == 'video':
+            yt_in_best(url)
+        else:
+            audio_from_yt(url)
+        return {"status": "success"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}, 500
