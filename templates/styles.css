@@ -1,0 +1,442 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .platform-icons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .platform-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .platform-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .platform-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .youtube { background: linear-gradient(45deg, #FF0000, #CC0000); }
+        .instagram { background: linear-gradient(45deg, #E4405F, #C13584, #833AB4); }
+        .threads { background: linear-gradient(45deg, #000000, #333333); }
+        .pinterest { background: linear-gradient(45deg, #BD081C, #E60023); }
+        .facebook { background: linear-gradient(45deg, #1877F2, #42A5F5); }
+
+        .platform-name {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .download-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .url-input {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 15px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .url-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .url-input::placeholder {
+            color: #9ca3af;
+        }
+
+        .download-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .download-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .audio-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .audio-btn:hover {
+            box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .supported-text {
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-top: auto;
+        }
+
+        .footer-text {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .footer-text .heart {
+            color: #ff6b6b;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icon {
+            font-size: 1.2rem;
+        }
+
+        .twitter { border-color: #1DA1F2; }
+        .twitter:hover { background: rgba(29, 161, 242, 0.2); }
+
+        .github { border-color: #333; }
+        .github:hover { background: rgba(51, 51, 51, 0.2); }
+
+        .instagram-link { border-color: #E4405F; }
+        .instagram-link:hover { background: rgba(228, 64, 95, 0.2); }
+
+        .gmail { border-color: #EA4335; }
+        .gmail:hover { background: rgba(234, 67, 53, 0.2); }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .platform-icons {
+                gap: 15px;
+            }
+            
+            .platform-item {
+                padding: 12px;
+            }
+            
+            .platform-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+            
+            .download-container {
+                padding: 30px 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+                margin-bottom: 40px;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+
+            .social-link {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+
+            .footer {
+                padding: 25px 20px;
+            }
+        }
+
+        .loading {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .loading.active {
+            display: flex;
+        }
+
+        .loading-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+            animation: loading 1.4s infinite ease-in-out both;
+        }
+
+        .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+ 
+
+        @keyframes loading {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        .fb-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+        .ig-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+        .yt-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+        .rdt-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+        .th-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+        .pnt-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+       .rdt-icon {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+.x-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.github-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.gmail-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+.linkedin-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+
+.insta-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+    
