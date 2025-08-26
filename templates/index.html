@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="header">
-        <h1>toly-moly lol</h1> 
+        <h1>Download Media</h1>
          
-        <h4>Download high-quality videos and audio from your favorite social platforms (img ke liye screenshot lelo vai)</h4>
+        <h4>Download high-quality videos and audio from your favorite social platforms</h4>
     </div>
 
       <div class="download-container">
@@ -22,9 +22,20 @@
                 class="url-input" 
                 placeholder="Paste your video URL here (YouTube, Instagram, Threads, Pinterest, Facebook)"
                 id="urlInput"
+                oninput="sendInput()"
             >
+            <script>
+        async function sendInput() {
+        let value = document.getElementById('urlInput').value;
+        await fetch('/store', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ urlInput: value })
+        });
+    }
+</script>
         </div>
-        <button class="download-btn" id="downloadBtn">
+        <button onclick = {{yt_in_best(url)}} class="download-btn" id="downloadBtn">
             <span class="btn-text">⬇️ Download Video</span>
             <div class="loading">
                 <div class="loading-dot"></div>
@@ -32,7 +43,7 @@
                 <div class="loading-dot"></div>
             </div>
         </button>
-        <button class="download-btn audio-btn" id="downloadAudioBtn">
+        <button onclick= {{audio_from_yt(url)}} ="download-btn audio-btn" id="downloadAudioBtn">
             <span class="btn-text">🎵 Download Audio Only</span>
             <div class="loading">
                 <div class="loading-dot"></div>
