@@ -15,47 +15,105 @@
         });
 
         // Unified download handler
+        // async function handleDownload(type) {
+        //     const url = urlInput.value.trim();
+        //     const currentBtn = type === 'video' ? downloadBtn : downloadAudioBtn;
+        //     const btnText = currentBtn.querySelector('.btn-text');
+        //     const loading = currentBtn.querySelector('.loading');
+
+        //     if (!url) {
+        //         alert('Please enter a valid URL');
+        //         return;
+        //     }
+        //     if (!isValidUrl(url)) {
+        //         alert('Please enter a valid URL');
+        //         return;
+        //     }
+        //     btnText.style.display = 'none';
+        //     loading.classList.add('active');
+        //     currentBtn.disabled = true;
+
+        //     try {
+        //         const response = await fetch('/download', {
+        //             method: 'POST',
+        //             headers: { 'Content-Type': 'application/json' },
+        //             body: JSON.stringify({ url, type })
+        //         });
+        //         const result = await response.json();
+        //         if (result.status === 'success') {
+        //             alert(type === 'video' 
+        //                 ? 'Video download completed! Check your downloads folder.' 
+        //                 : 'Audio download completed! Check your downloads folder.');
+        //         } else {
+        //             alert('Download failed: ' + (result.message || 'Unknown error'));
+        //         }
+        //     } catch (error) {
+        //         alert('Download failed. Please try again.');
+        //     } finally {
+        //         btnText.style.display = 'block';
+        //         loading.classList.remove('active');
+        //         currentBtn.disabled = false;
+        //     }
+        // }
+
         async function handleDownload(type) {
-            const url = urlInput.value.trim();
-            const currentBtn = type === 'video' ? downloadBtn : downloadAudioBtn;
-            const btnText = currentBtn.querySelector('.btn-text');
-            const loading = currentBtn.querySelector('.loading');
+    const url = urlInput.value.trim();
+    const currentBtn = type === 'video' ? downloadBtn : downloadAudioBtn;
+    const btnText = currentBtn.querySelector('.btn-text');
+    const loading = currentBtn.querySelector('.loading');
 
-            if (!url) {
-                alert('Please enter a valid URL');
-                return;
-            }
-            if (!isValidUrl(url)) {
-                alert('Please enter a valid URL');
-                return;
-            }
-            btnText.style.display = 'none';
-            loading.classList.add('active');
-            currentBtn.disabled = true;
+    if (!url) {
+        alert('Please enter a valid URL');
+        return;
+    }
+    if (!isValidUrl(url)) {
+        alert('Please enter a valid URL');
+        return;
+    }
+    btnText.style.display = 'none';
+    loading.classList.add('active');
+    currentBtn.disabled = true;
 
-            try {
-                const response = await fetch('/download', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ url, type })
-                });
-                const result = await response.json();
-                if (result.status === 'success') {
-                    alert(type === 'video' 
-                        ? 'Video download completed! Check your downloads folder.' 
-                        : 'Audio download completed! Check your downloads folder.');
-                } else {
-                    alert('Download failed: ' + (result.message || 'Unknown error'));
-                }
-            } catch (error) {
-                alert('Download failed. Please try again.');
-            } finally {
-                btnText.style.display = 'block';
-                loading.classList.remove('active');
-                currentBtn.disabled = false;
+    try {
+        const endpoint = type === 'video' ? '/download_video' : '/download_audio';
+        const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url }) // Remove type from payload since it's determined by the endpoint
+        });
+
+        if (response.ok) {
+            // Handle file download
+            const blob = await response.blob();
+            const disposition = response.headers.get('Content-Disposition');
+            let filename = 'downloaded_file';
+            if (disposition && disposition.includes('filename=')) {
+                filename = disposition.split('filename=')[1].replace(/"/g, '');
             }
+            const downloadUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(downloadUrl);
+            a.remove();
+
+            alert(type === 'video' 
+                ? 'Video download completed! Check your downloads folder.' 
+                : 'Audio download completed! Check your downloads folder.');
+        } else {
+            const error = await response.text();
+            alert('Download failed: ' + error);
         }
-
+    } catch (error) {
+        alert('Download failed: ' + error.message);
+    } finally {
+        btnText.style.display = 'block';
+        loading.classList.remove('active');
+        currentBtn.disabled = false;
+    }
+}
 
         // Platform click handlers
         platformItems.forEach(item => {

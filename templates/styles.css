@@ -18,7 +18,7 @@
         .header {
             text-align: center;
             margin-bottom: 40px;
-            color: white;
+            color: rgb(249, 243, 243);
             position:absolute left;
         }
 
@@ -84,7 +84,7 @@
         .facebook { background: linear-gradient(45deg, #1877F2, #42A5F5); }
 
         .platform-name {
-            color: white;
+            color: rgb(241, 240, 240);
             font-size: 0.9rem;
             font-weight: 500;
         }
@@ -109,12 +109,12 @@
         .url-input {
             width: 100%;
             padding: 18px 20px;
-            border: 2px solid #e1e5e9;
+            border: 2px solid #f4f5f7;
             border-radius: 15px;
             font-size: 16px;
             outline: none;
             transition: all 0.3s ease;
-            background: rgb(249, 247, 247);
+            background: rgb(237, 236, 236);
         }
 
         .url-input:focus {
@@ -130,7 +130,7 @@
             width: 100%;
             padding: 18px;
             background: linear-gradient(135deg, #4660d7 0%, #764ba2 100%);
-            color: white;
+            color: rgb(241, 241, 241);
             border: none;
             border-radius: 15px;
             font-size: 18px;
@@ -199,7 +199,7 @@
         }
 
         .feature-title {
-            color: white;
+            color: rgb(240, 239, 239);
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 10px;
@@ -212,7 +212,7 @@
 
         .supported-text {
             text-align: center;
-            color: white;
+            color: rgb(240, 239, 239);
             font-size: 1.1rem;
             margin-bottom: 20px;
             opacity: 0.9;
@@ -231,7 +231,7 @@
         }
 
         .footer-text {
-            color: white;
+            color: rgb(241, 240, 240);
             font-size: 1.1rem;
             margin-bottom: 20px;
             opacity: 0.9;
@@ -255,7 +255,7 @@
             gap: 8px;
             padding: 12px 20px;
             background: rgba(255, 255, 255, 0.1);
-            color: white;
+            color: rgb(239, 237, 237);
             text-decoration: none;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -277,10 +277,10 @@
         .twitter { border-color: #1DA1F2; }
         .twitter:hover { background: rgba(29, 161, 242, 0.2); }
 
-        .github { border-color: #333; }
+        .github { border-color: #f1f0f0; }
         .github:hover { background: rgba(51, 51, 51, 0.2); }
 
-        .instagram-link { border-color: #E4405F; }
+        .instagram-link { border-color: #1982d8; }
         .instagram-link:hover { background: rgba(228, 64, 95, 0.2); }
 
         .gmail { border-color: #EA4335; }

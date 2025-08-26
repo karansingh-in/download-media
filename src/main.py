@@ -44,11 +44,11 @@ def audio_from_yt(url):
     return filename    
 
 # handling download requests with flask
-@app.route("/store", methods=['POST'])
-def store():
-    data = request.get_json()
-    url = data.get('urlInput')
-    return url
+# @app.route("/store", methods=['POST'])
+# def store():
+#     data = request.get_json()
+#     url = data.get('urlInput')
+#     return url
 
 @app.route("/download_video", methods=['POST'])
 def download_video():
@@ -65,3 +65,10 @@ def download_audio():
     filename = audio_from_yt(url)
     basename = os.path.basename(filename)
     return send_from_directory(DOWNLOAD_DIR, basename, as_attachment=True)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
