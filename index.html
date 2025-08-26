@@ -35,7 +35,7 @@
     }
 </script>
         </div>
-        <button onclick = {{yt_in_best(url)}} class="download-btn" id="downloadBtn">
+        <button onclick="downloadVideo()" class="download-btn" id="downloadBtn">
             <span class="btn-text">⬇️ Download Video</span>
             <div class="loading">
                 <div class="loading-dot"></div>
@@ -43,7 +43,7 @@
                 <div class="loading-dot"></div>
             </div>
         </button>
-        <button onclick= {{audio_from_yt(url)}} class="download-btn audio-btn" id="downloadAudioBtn">
+        <button onclick="downloadAudio()" class="download-btn audio-btn" id="downloadAudioBtn">
             <span class="btn-text">🎵 Download Audio</span>
             <div class="loading">
                 <div class="loading-dot"></div>
@@ -168,6 +168,47 @@
         </div>
     </footer>
 
+    <script>
+        async function downloadVideo() {
+            let url = document.getElementById('urlInput').value;
+            const response = await fetch('/download_video', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: url })
+            });
+            if (response.ok) {
+                const blob = await response.blob();
+                const urlBlob = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = urlBlob;
+                a.download = ''; // Let browser use filename from response
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(urlBlob);
+            }
+        }
+
+        async function downloadAudio() {
+            let url = document.getElementById('urlInput').value;
+            const response = await fetch('/download_audio', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: url })
+            });
+            if (response.ok) {
+                const blob = await response.blob();
+                const urlBlob = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = urlBlob;
+                a.download = '';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(urlBlob);
+            }
+        }
+    </script>
     
 </body>
 </html>
