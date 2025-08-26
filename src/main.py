@@ -34,4 +34,18 @@ def audio_from_yt(url):
 def store():
     data = request.get_json()
     url = data.get('urlInput')
-    return url        
+    return url
+
+@app.route("/download_video", methods=['POST'])
+def download_video():
+    data = request.get_json()
+    url = data.get('url')
+    yt_in_best(url)
+    return {"status": "success"}
+
+@app.route("/download_audio", methods=['POST'])
+def download_audio():
+    data = request.get_json()
+    url = data.get('url')
+    audio_from_yt(url)
+    return {"status": "success"}

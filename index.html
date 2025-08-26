@@ -20,7 +20,7 @@
             <input 
                 type="text" 
                 class="url-input" 
-                placeholder="Paste your video URL here (YouTube, Instagram, Threads, Pinterest, Facebook)"
+                placeholder="🔗 Paste your video URL here (YouTube, Instagram, Threads, Pinterest, Facebook)"
                 id="urlInput"
                 oninput="sendInput()"
             >
@@ -43,8 +43,8 @@
                 <div class="loading-dot"></div>
             </div>
         </button>
-        <button onclick= {{audio_from_yt(url)}} ="download-btn audio-btn" id="downloadAudioBtn">
-            <span class="btn-text">🎵 Download Audio Only</span>
+        <button onclick= {{audio_from_yt(url)}} class="download-btn audio-btn" id="downloadAudioBtn">
+            <span class="btn-text">🎵 Download Audio</span>
             <div class="loading">
                 <div class="loading-dot"></div>
                 <div class="loading-dot"></div>
@@ -98,6 +98,19 @@
   
     <div class="features">
         <div class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <div class="feature-title">Tools used</div>
+            <div class="feature-description">yt-dlp, ffmpeg, HTML5, CSS, Python, Flask, git, git LFS, Github, Vercel.</div>
+        </div>
+
+        
+        <div class="feature-card">
+            <div class="feature-icon">🔨</div>
+            <div class="feature-title">View Source code</div>
+            <div class="feature-description">The source code for this website is available at my github at : www.github.com/karansingh-in/download-media.</div>
+        </div>
+
+        <div class="feature-card">
             <div class="feature-icon">🎥</div>
             <div class="feature-title">High Quality Downloads</div>
             <div class="feature-description">Download videos in up to 4K resolution with crystal clear quality and original audio tracks.</div>
@@ -115,11 +128,6 @@
             <div class="feature-description">Works seamlessly across YouTube, Instagram, Threads, Pinterest, and Facebook.</div>
         </div>
         
-        <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <div class="feature-title">Safe & Secure</div>
-            <div class="feature-description">No registration required. Your privacy is protected with secure download processing.</div>
-        </div>
     </div>
 
     <footer class="footer">
