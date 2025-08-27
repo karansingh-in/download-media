@@ -18,7 +18,7 @@ Live demo available at:
 
 ## Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript 1  
+- **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python, flask   
 - **Assets & Structure**:
   - `icons/` – UI icons.
