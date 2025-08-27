@@ -7,19 +7,19 @@ Download media (videos/audio) via a simple web interface.
 ## Demo
 
 Live demo available at:  
-[download-media-alpha.vercel.app](https://download-media-alpha.vercel.app) 0
+[download-media-alpha.vercel.app](https://download-media-alpha.vercel.app)
 
 ## Features
 
 - Easily download media (videos or audio) from supported sources.
 - Minimal, responsive HTML/CSS/JavaScript frontend.
-- Lightweight backend (possibly Python-powered).
+- Lightweight backend Python,flask.
 - Consistent styling using provided icons and templates.
 
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript 1  
-- **Backend**: Likely Python (based on repository contents) 2  
+- **Backend**: Python, flask   
 - **Assets & Structure**:
   - `icons/` – UI icons.
   - `templates/` – HTML templates.
