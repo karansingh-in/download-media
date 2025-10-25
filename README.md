@@ -1,5 +1,7 @@
 # Download-media
 
+(still in development, having some issue with ffmpeg will fix it later)
+
 Download media (videos/audio) via a simple web interface.
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
